@@ -33,7 +33,7 @@ type User struct {
 func main() {
 	// this connects & tries a simple 'SELECT 1', panics on error
 	// use sqlx.Open() for sql.Open() semantics
-	db, err := sqlx.Connect("sqlite3", "__deleteme.db")
+	db, err := sqlx.Connect("sqlite3", "_deleteme.db")
 	if err != nil {
 		log.Fatalln(err)
 	}
